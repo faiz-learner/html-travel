@@ -1,0 +1,757 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    font-size: 62.5%;
+}
+li{
+    text-decoration: none ;
+    list-style: none;
+    
+}
+a{
+text-decoration: none;
+}
+
+
+/* ################################# UTILITY CLASSES ########################################## */
+
+.size-of-font-p{
+    font-size: 1.4rem;
+}
+.size-of-font-h1{
+    font-size: 3rem;
+    letter-spacing: .1em;
+}
+.size-of-font-h2{
+    font-size: 2.5rem;
+    letter-spacing: .1em;
+}
+.size-of-font-h3{
+    font-size: 2rem;
+    letter-spacing: .1em;
+}
+.size-of-font-h4{
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+}
+.size-of-font-h5{
+    font-size: 1rem;
+    letter-spacing: .1em;
+}
+.size-of-font-submit{
+    font-size: 1.6rem;
+}
+.submit-index-style-lrg{
+    padding: 1rem 3rem;
+    /* border: 2px solid gray; */
+    font-size:1.6rem ;
+    border-radius: 20px;
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+}
+.submit-index-style-sml{
+    padding: 1rem 1rem;
+    /* border: 2px solid gray; */
+    border-radius: 30px;
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+}
+.font-color-red{
+    color: red;
+}
+.submit-index-style-lrg:hover{
+    background-color: rgb(191, 176, 176);
+}
+.submit-index-style-sml:hover{
+    background-color: rgb(191, 176, 176);
+}
+.cap-ltr-spc{
+    text-transform: uppercase;
+}
+
+/* ###################################### INDEX.HTML PAGE ######################################################## */
+
+
+/*  ##################################   FIRST CONTENT     ###################################################### */
+
+.indx-container-1{
+    height:95vh;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)),url(../Image/pexels-bess-hamiti-36487.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 2.5rem;
+}
+.indx-c1-nav-logo{
+    /* border: 2px solid white; */
+    width: 13%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: .3rem;
+    left: 9rem;
+    color: white;   
+}
+.indx-c1-nav-menu{
+    /* border: 2px solid white; */
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 30%; 
+}
+.indx-c1-nav-menu ul{
+    margin-left: 9rem;
+}
+.indx-c1-nav-menu ul li{
+    display: inline-block;
+    /* text-decoration: none; */
+    text-transform: uppercase;
+    padding-left:3rem;
+    font-size: 1.3rem;
+}
+.indx-c1-nav-menu ul li a:hover{
+   
+    font-size: 1.5rem;
+    border-bottom: .1em solid white;
+    
+}
+.indx-c1-nav-menu ul li a{  
+    padding-bottom: .2em;
+    text-decoration: none;
+    color: white;  
+    transition: font-size 1s;
+}
+.indx-c1-content{
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top:20%;
+}
+.indx-c1-content a{
+    display: inline-block;
+    /* font-size:1.6rem ; */
+    text-decoration: none;
+    margin-top: 2rem;
+    /* padding: 1.2rem 3rem; */
+    /* border: 2px solid white; */
+    /* border-radius: 20px; */
+    /* background-color: white; */
+    /* color: black; */
+    /* text-transform: uppercase; */
+}
+.indx-c1-content h1,.indx-c1-content p{
+   padding-bottom: 2rem;
+ }
+/* ######################################### MEDIA QUERY - INDEX - C1 #################################################### */
+@media screen and (max-width:780px){
+    .indx-container-1{
+        height:100vh;
+        padding-top: 2.5rem;
+    }
+    .indx-c1-nav-logo{
+        /* border: 2px solid white; */
+        width: 100%;
+        display: block;
+        left: 0;  
+    }
+    .indx-c1-nav-menu{
+        /* border: 2px solid white; */
+        width: 100%;
+        margin-left:0;
+    }
+    .indx-c1-nav-menu ul{
+        margin-left: 0;
+    }
+    .indx-c1-nav-menu ul li{
+        display: block;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    .indx-c1-content{
+        padding-top:10%;
+    }
+    
+}
+@media screen and (max-width:950px) and (orientation:landscape){
+    .indx-c1-content{
+        padding-top:7%;
+    }
+    .indx-c1-content a{
+        margin-top: 2rem;
+        
+    }
+}
+@media screen and (max-width:780px) and (orientation:landscape){
+    .indx-c1-content{
+        padding-top:3%;
+    }
+    .indx-c1-content h1{
+        font-size: 2rem;
+    }
+    .indx-c1-content a{
+        margin-top: 0;   
+    }
+}
+@media screen and (max-width:655px) and (orientation:landscape){
+    .indx-c1-content{
+        padding-top:2%;
+        width: 100%;
+    }
+    .indx-c1-content h1{
+        font-size: 2rem;
+    }
+    .indx-c1-content a{
+        margin-top: 0;
+        
+    }
+    .indx-c1-nav-menu{
+        display:block;
+        padding-left: 0;
+        padding-top: .3rem;
+    }
+    .indx-c1-nav-menu ul li{
+        display: inline-block;
+        margin-left: 2rem;
+        padding-top: 2rem;
+    }
+    .indx-c1-content p{
+        width: 100%; 
+    }
+}
+
+
+/* ############################ Index - SECOND CONTENT ############################################# */
+.indx-container-2{
+    height:100vh;
+    width:100vw;
+    background-color:rgb(66, 64, 64);
+    margin: 5em auto;   
+    /* box-shadow: 0.1em 0.1em .3em rgba(0, 0, 0, 0.178); 
+    border-radius: 1em; */
+}
+.indx-c2-p1-img,.indx-c2-p2-img{
+    float: left;
+    width:50%;
+    height: 100%; 
+}
+.indx-c2-p1-content,.indx-c2-p2-content{
+    float: left;
+    width:50%;
+    padding: 2em 3em 2em 5em; 
+    height: 100%;
+}
+.indx-c2-p1-content h2,.indx-c2-p2-content h2{
+    text-transform: uppercase;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+.indx-c2-p1-content p,.indx-c2-p2-content p{
+    margin-bottom: 1em;
+    height: 30%;
+    overflow: scroll;
+}
+.indx-c2-p1-content a,.indx-c2-p2-content a{
+   display: inline-block;
+}
+.indx-c2-p1-img,.indx-c2-p2-img{
+   
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.indx-c2-p1-img{
+    background-image: url(../Image/wayanadu.jpg);
+    /* border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em; */
+}
+.indx-c2-p2-img{
+    background-image: url(../Image/Thickforest.jpg);
+    /* border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em; */
+}
+.indx-place-first::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+.indx-place-second::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+.indx-container-2::before{
+    content: "";
+    display:inline-block;
+    padding-bottom: 4.5em;   
+}
+.indx-place-first,.indx-place-second{
+    width:72%;
+    height: 40%;
+    background-color:rgb(13, 36, 80);
+    color: white;
+    box-shadow:.1em .2em .3em rgba(0, 0, 0, .5);
+    /* border-radius: 1em; */
+}
+.indx-place-first{
+    margin:0 auto;   
+}
+.indx-place-second{
+    margin:4.5em auto 0 auto;
+}
+
+/* ######################################### MEDIA QUERY - INDEX - C1 #################################################### */
+
+@media screen and (max-width:653px){
+    .indx-container-2{
+        height:auto;
+        padding-bottom: 5em;
+    }
+    .indx-c2-p1-img,.indx-c2-p2-img{
+        display: block;
+        width:100%;
+        height: 40vh; 
+    }
+    .indx-place-first,.indx-place-second{
+        height: auto;
+    }
+    .indx-c2-p1-content,.indx-c2-p2-content{
+        display: block;
+        width:100%;
+        /* padding: 2em 3em 2em 5em;  */
+        height: 40vh;
+        text-align: center;
+    }
+    .indx-c2-p1-content a,.indx-c2-p2-content a{
+        margin-top: 1em;      
+    }
+}
+@media screen and (max-width:1000px) and (orientation:landscape){
+    .indx-container-2{
+        height:auto;
+        padding-bottom: 5em;
+    }
+    .indx-c2-p1-img,.indx-c2-p2-img{
+        display: block;
+        width:100%;
+        height: 60vh; 
+    }
+    .indx-place-first,.indx-place-second{
+        height: auto;
+    }
+    .indx-c2-p1-content,.indx-c2-p2-content{
+        display: block;
+        width:100%;
+        /* padding: 2em 3em 2em 5em;  */
+        height: 60vh;
+        text-align: center;
+    }
+    .indx-c2-p1-content a,.indx-c2-p2-content a{
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width:655px) and (orientation:landscape){
+    .indx-c2-p1-content h2,.indx-c2-p2-content h2{
+        font-size: 2rem;
+    }
+    .indx-c2-p1-content a,.indx-c2-p2-content a{
+        margin-top:0;
+    }
+}
+@media screen and (max-width:285px) {
+    .indx-c2-p1-content h2,.indx-c2-p2-content h2{
+        font-size: 1.6rem;
+    }
+    .indx-c2-p1-content a,.indx-c2-p2-content a{
+        margin-top:1em;
+    }
+}
+
+/* ########################################## THIRD CONTENT ########################################### */
+
+.indx-container-3{
+    /* border: 2px solid black; */
+    width: 72vw;
+    height: auto;
+    margin: 5em auto;
+    box-shadow: .1em .2em .3em rgba(0, 0, 0, .5);
+}
+.indx-c3-first-content,.indx-c3-second-content,.indx-c3-third-content{
+   
+    height: auto;
+    width: 33.333%;
+    float: left;
+    padding: 2em .5em;
+    text-align: center;
+    
+}
+.indx-c3-first-content i,.indx-c3-first-content h3,.indx-c3-first-content p,
+.indx-c3-second-content i,.indx-c3-second-content h3,.indx-c3-second-content p,
+.indx-c3-third-content i,.indx-c3-third-content h3,.indx-c3-third-content p
+{
+    padding: .3em .2em;   
+}
+.indx-container-3::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.indx-c3-first-content,.indx-c3-third-content{
+    background-color: rgb(13, 36, 80);
+    color: white;
+}
+.indx-c3-second-content{
+    background-color: rgba(148, 11, 11, 0.922);
+    color: white;
+}
+.indx-c3-first-content p,.indx-c3-second-content p,.indx-c3-third-content p{
+    margin-bottom: .5em;
+    height: 45%;
+    overflow: scroll;
+}
+@media screen and (max-width:650px){
+    .indx-c3-first-content,.indx-c3-second-content,.indx-c3-third-content{
+        width: 100%;
+        float: none;
+        display: block;
+        margin:0 auto;
+    }
+}
+
+/* ######################################### FOURTH CONTENT ###################################### */
+
+.indx-container-4{
+    text-align: center;
+    height: auto;
+    background-color: rgb(7, 19, 42);
+    padding: 2em 0 4em 0;
+}
+.indx-c4-first-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1.5em 2.5em 1.5em 2.5em;
+}
+.indx-c4-second-content{
+    /* padding-top: 1.5em; */
+    color: white;
+    letter-spacing: .2rem;
+}
+
+/* ############################################# ABOUT US.HTML ############################################## */
+
+/* ################################################## NAVIGATION BAR ########################################### */
+
+/* Naigation bar is same as index so classes of index will be used here(about us page) */
+.abt-container-1{
+
+    height:13vh;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)),url(../Image/pexels-bess-hamiti-36487.jpg);
+    /* background-position: center; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-top: 2.5rem;
+   
+}
+.abt-container-2{
+    width: 80vw;
+    height: 65vh;
+    /* border: 2px solid red; */
+    margin: 2.5rem auto;
+}
+.abt-c2-heading h2{
+    padding-bottom: .2em;
+    border-bottom: 5px solid red; 
+}
+.abt-c2-heading p{
+    padding-top: .7em;
+    padding-bottom: 1.5em;
+    
+}
+.abt-c2-list-one,.abt-c2-list-two{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.abt-c2-list-one p,.abt-c2-list-two p{
+   padding-bottom: 1.5em;
+}
+.clear-display::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.abt-c2-rprt-one,.abt-c2-rprt-two,.abt-c2-rprt-three,.abt-c2-rprt-four{
+    width: 25%;
+    text-align: center;
+    float: left;
+    margin: 4em 0px;
+    color: red;
+    
+}
+.abt-c2-rprt-one h3,.abt-c2-rprt-two h3,.abt-c2-rprt-three h3,.abt-c2-rprt-four h3{
+    padding-bottom: .3em;
+}
+
+.abt-c2-contact{
+    /* border: 2px solid blue; */
+    height: 15vh;
+    width: 100%;
+    background-image: linear-gradient(to left,rgb(222, 18, 18),rgb(240, 58, 58),rgb(208, 116, 116));
+    color: white;
+    box-shadow: .1em .2em .8em rgba(0, 0, 0, .5);
+}
+.abt-c2-contact-h3,.abt-c2-contact-a{
+  float: left;
+}
+.abt-c2-contact-h3{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 60%;
+   
+    /* padding-top: 2.5em;
+    padding-left: .5em; */
+}
+.abt-c2-contact-h3 h3{
+    /* border: 2px solid black; */
+    margin: 1.5em 0;
+    padding: .7em .7em;
+   
+}
+.abt-c2-contact-a{
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 100%;
+    letter-spacing: .3em;
+    text-align: center;
+    
+}
+.abt-c2-contact-a a{
+    display: inline-block;
+    width: fit-content;
+    border: 2px  solid white;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 1em 0;
+    padding: .7em 5em;
+}
+/* ######################################### MEDIA QUERY - ABOUT US #################################################### */
+@media screen and (max-width:900px){
+    .abt-c2-contact{
+        height: 8rem;
+    }
+    .abt-c2-contact-h3{
+        width:50%;  
+    }
+    .abt-c2-contact-h3 h3{
+        
+        font-weight:500;
+    }
+    .abt-c2-contact-a{
+        text-align: center;
+        width: 50%;
+    } 
+    .abt-c2-contact-a a{
+        font-size: 1.5rem;
+    }
+    .abt-c2-contact-a a{
+        margin: 1.2em auto;   
+    }
+}
+
+@media screen and (max-width:780px){
+
+    .abt-container-1{
+        height:auto;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem; 
+    }
+
+    .abt-c2-contact{
+        /* border: 2px solid blue; */
+        height:13em;
+        width:100%;        
+    }
+   .clear-display{
+    padding: 2rem;
+   }
+    .abt-c2-contact-h3{
+        height:auto;
+        width:100%;
+        padding-top: 1em;
+        text-align: center;
+        
+    }
+    .abt-c2-contact-a{
+        height:auto;
+        width:100%;
+        /* padding-top: .5em; */
+        text-align: center;
+        font-size: 1rem;
+    }
+    .abt-c2-contact-a a,.abt-c2-contact-h3 h3{
+        
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:430px){
+    
+    .abt-c2-rprt-one,.abt-c2-rprt-two,.abt-c2-rprt-three,.abt-c2-rprt-four{
+        width: 50%;
+    }
+    .abt-c2-list-one,.abt-c2-list-two{
+        width: 100%;
+        background-image: linear-gradient(to left,rgb(222, 18, 18),rgb(240, 58, 58),rgb(208, 116, 116));
+        color: white;
+        padding: 2em 0;
+        margin-top: 1em;
+        
+    }
+}
+
+
+/* ############################################# CONTACT US.HTML ############################################## */
+
+/* ################################################## NAVIGATION BAR ########################################### */
+
+/* Naigation bar is same as index so classes of index will be used here(about us page) */
+.cntct-container-1{
+
+    height:13vh;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)),url(../Image/pexels-bess-hamiti-36487.jpg);
+    /* background-position: center; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-top: 2.5rem;
+   
+}
+.cntct-container-2{
+    /* border: 2px solid black; */
+    width: 80vw;
+    height: 80vh;
+    margin: 5rem auto;
+}
+.cntct-c2-item-one,.cntct-c2-item-two{
+    background-color:whitesmoke;
+    float: left;
+    height: 100%;
+    width: 45%;
+    margin-left: 3.2%;
+}
+.cntct-c2-item1-img{
+    height: 57%;
+    width: 100%;
+    background-image: url(../Image/johannes-plenio-hvrpOmuMrAI-unsplash.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.cntct-container-2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cntct-c2-item-two label, 
+.cntct-c2-item-two h1,
+.cntct-c2-item-two p{
+    display:inline-block;
+    width: 97%;
+    padding: .8rem .8rem .8rem 0;
+    margin-left: .8rem;
+}
+.cntct-c2-submit{
+    margin-top: .5rem;
+}
+.cntct-c2-item-two h1{
+    border-bottom: 4px solid red;
+}
+.cntct-c2-item-two input,.cntct-c2-item-two textarea{
+    width: 97%;
+    margin-left: .8rem;
+    padding:.6rem .6rem .6rem 0;
+}
+.cntct-c2-item-two textarea{
+    resize: none;
+}
+.cntct-c2-item-one h2, 
+.cntct-c2-item-one p,
+.cntct-c2-item-one address,
+.cntct-c2-item-one h3{
+    display:block;
+    width: 100%;
+    padding: .8rem;
+   
+}
+.cntct-c2-item-one address{
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* ####################################### MEDIA QUERY - CONTACT US #################################################### */
+
+@media screen and (max-width:950px){
+    .cntct-container-1{
+
+        height:auto;
+        padding-bottom: 2.5rem;
+       
+    }
+    .cntct-c2-item-one,.cntct-c2-item-two{
+       
+        height: auto;
+        width: 100%;
+        padding-bottom: 1.3em;
+        margin: 0 0 4em 0;
+        
+    }
+}
+@media screen and (max-width:900px) and (orientation:landscape){
+    .cntct-container-1{
+
+        height:auto;
+        padding-bottom: 2.5rem;
+       
+    }
+    .cntct-c2-item-one,.cntct-c2-item-two{
+        background-color:whitesmoke;
+        float: left;
+        height: auto;
+        width: 100%;
+        padding-bottom: 1.3em;
+        margin: 0 0 4em 0;
+        
+    }
+}
+@media screen and (min-width:900px) and (max-width:1000px){
+    .cntct-container-1{
+        height:auto;
+        padding-bottom: 2.5rem;
+       
+    }
+    .cntct-c2-item-one,.cntct-c2-item-two{
+        height: auto;
+        width: 100%;
+        padding-bottom: 1.3em;
+        margin: 0 0 4em 0;
+        
+    }
+}
+
+
+
+
+
+
+
+
